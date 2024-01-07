@@ -1,3 +1,4 @@
+using System.Reflection;
 using BookStore.DbOperations;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,7 @@ public class Startup
         services.AddEndpointsApiExplorer(); // Discovers endpoints
         services.AddSwaggerGen(); //Prepares documentation for Swagger
         services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
+        services.AddAutoMapper(Assembly.GetExecutingAssembly()); // AutoMapper Configurations
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
