@@ -57,8 +57,6 @@ public class BookController : ControllerBase
     [HttpPost]
     public IActionResult AddBook([FromBody] CreateBookCommand.CreateBookModel newBook)
     {
-        try
-        {
             var command = new CreateBookCommand(_context, _mapper)
             {
                 Model = newBook
@@ -66,11 +64,10 @@ public class BookController : ControllerBase
             var validator = new CreateBookCommandValidator(); //Fluent validation
             validator.ValidateAndThrow(command); // Do validate
             command.Handle();
-        }
-        catch (Exception e)
+        /*catch (Exception e)
         {
             return BadRequest(e.Message);
-        }
+        }*/ 
         return Ok();
     }
 
