@@ -10,6 +10,8 @@ With .NET 7 API
 ![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/472d1727-08ca-47eb-a9ee-6ad38c63be6d)
 
 ## Week 5 - 5. Task - Genre Controller and Services Adding
+![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/e898f2f1-2d0e-459b-8f05-cb69add6d728)
+![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/301d41d3-2234-40cf-b068-78360ebf4a98)
 
 ## Week 5 - 6. Task - Author Controller and Services Adding
 
