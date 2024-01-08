@@ -14,5 +14,8 @@ With .NET 7 API
 ![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/301d41d3-2234-40cf-b068-78360ebf4a98)
 
 ## Week 5 - 6. Task - Author Controller and Services Adding
+![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/a990f0bd-973b-4148-a2c4-3d545e7485cb)
+![image](https://github.com/InancYucel/Book-Store-Project/assets/48295407/72fe0452-3d0f-4785-bd0a-0155975ce682)
+
 
 ## Week 5 - 7. Task - Completion of missing tests
