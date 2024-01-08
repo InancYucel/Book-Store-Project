@@ -1,14 +1,10 @@
 using AutoMapper;
-using BookStore.BookOperations.CreateBook;
-using BookStore.BookOperations.DeleteBook;
-using BookStore.BookOperations.GetBookDetail;
-using BookStore.BookOperations.GetBooks;
-using BookStore.BookOperations.UpdateBook;
-using BookStore.BookOperations.Validators;
+using BookStore.Application.BookOperations.Commands;
+using BookStore.Application.BookOperations.Queries;
+using BookStore.Application.Validators.BookValidators;
 using BookStore.DbOperations;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace BookStore.Controllers;
 

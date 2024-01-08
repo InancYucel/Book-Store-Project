@@ -1,7 +1,7 @@
 using AutoMapper;
 using BookStore.DbOperations;
 
-namespace BookStore.BookOperations.CreateBook;
+namespace BookStore.Application.BookOperations.Commands;
 
 public class CreateBookCommand
 {
@@ -20,7 +20,7 @@ public class CreateBookCommand
         var book = _dbContext.Books.SingleOrDefault(x => x.Title == Model.Title);
         if (book != null)
         {
-            throw new InvalidOperationException("Kitap zaten mevcut");
+            throw new InvalidOperationException("Book is already exist");
         }
 
         book = _mapper.Map<Book>(Model); //AutoMapper
