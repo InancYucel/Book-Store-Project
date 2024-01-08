@@ -15,9 +15,7 @@ public class GetAuthorsQuery
 	public List<AuthorsViewModel> Handle()
 	{
 		var authorList = _dbContext.Authors.OrderBy(a => a.Id).ToList();
-		
-		List<AuthorsViewModel> viewModel = _mapper.Map<List<AuthorsViewModel>>(authorList);
-		
+		var viewModel = _mapper.Map<List<AuthorsViewModel>>(authorList);
 		return viewModel;
 	}
 	

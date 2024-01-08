@@ -19,21 +19,18 @@ public class DataGenerator
             context.Authors.AddRange(
                 new Author
                 {
-                    //Id = 1,
                     Name = "Miyamoto",
                     Surname = "Musashi",
                     Birthday = new DateTime(1600, 1, 1)
                 },
                 new Author
                 {
-                    //Id = 1,
                     Name = "Marcus",
                     Surname = "Aurelius",
                     Birthday = new DateTime(45, 1, 1)
                 },
                 new Author
                 {
-                    //Id = 1,
                     Name = "Frank",
                     Surname = "Herbert",
                     Birthday = new DateTime(1939, 1, 1)
