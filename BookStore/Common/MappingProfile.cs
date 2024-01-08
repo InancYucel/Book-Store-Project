@@ -22,5 +22,11 @@ public class MappingProfile : Profile
         
         CreateMap<Genre, GenresViewModel>();
         CreateMap<Genre, GenreDetailViewModel>();
+        
+        CreateMap<Author, GetAuthorsQuery.AuthorsViewModel>();
+        CreateMap<Author, GetAuthorDetailQuery.AuthorDetailViewModel>();
+        CreateMap<CreateAuthorCommand.CreateAuthorViewModel, Author>();
+        CreateMap<UpdateAuthorCommand.UpdateAuthorViewModel, Author>();
+        
     }
 }

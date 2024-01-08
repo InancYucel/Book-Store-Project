@@ -17,7 +17,7 @@ public class GetBooksQuery
 
     public List<BooksViewModel> Handle()
     {
-        var bookList = _dbContext.Books.Include(x=>x.Genre).OrderBy(x => x.Id).ToList<Book>();
+        var bookList = _dbContext.Books.Include(x=>x.Genre).Include(a => a.Author).OrderBy(x => x.Id).ToList<Book>();
         //List<BooksViewModel> vm = new List<BooksViewModel>();
         var vm = _mapper.Map<List<Book>,  List<BooksViewModel>>(bookList);
         return vm;
@@ -31,5 +31,7 @@ public class GetBooksQuery
         public string Genre { get; set; }
         public int PageCount { get; set; }
         public string PublishDate { get; set; }
+        public string AuthorName { get; set; }
+        public string AuthorSurname { get; set; }
     }
 }

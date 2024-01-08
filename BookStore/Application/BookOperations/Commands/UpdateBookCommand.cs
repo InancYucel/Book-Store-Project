@@ -31,6 +31,7 @@ public class UpdateBookCommand
     {
         public string Title { get; set; }
         public int GenreID { get; set; }
+        public int AuthorId { get; set; }
     }
     
 }

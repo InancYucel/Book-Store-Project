@@ -32,6 +32,7 @@ public class CreateBookCommand
     public class CreateBookModel
     {
         public string Title { get; set; }
+        public int AuthorId { get; set; }
         public int GenreID { get; set; }
         public int PageCount { get; set; }
         public DateTime PublishDate { get; set; }
